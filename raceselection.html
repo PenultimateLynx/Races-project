@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Texturina:ital,opsz,wght@0,12..72,100..900;1,12..72,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Mystical race</title>
+</head>
+<body>
+    <!-- Music -->
+    <header>
+            <audio id="player" autoplay loop src="./sounds/videoplayback.weba" type="audio/ogg"> </audio>
+        <div>
+            <div>
+                <img class="volume" onclick="document.getElementById('player').pause()" src="./imgs/mute.png" alt="Mute Background Music">
+                <img class="volume" onclick="document.getElementById('player').play()" src="./imgs/volume.png" alt="Mute Background Music">
+                    <div id="volume-box">
+                        <input type="range" min="0" max="1" step="0.01" id="volumeBar" />
+                    </div>
+        
+            </div>
+            
+        </div>
+    </header>
+    <div>
+        <h1></h1>
+    </div>
+<!-- Name form -->
+    
+    <div class="content-form">
+        <form id="form">
+            <label>What is your name?:</label><br>
+            <input type="text" id="name" required><br>
+            <audio id="blade" src="./sounds/blade-sound.mp3"></audio>
+            <p id="error" style="display: none; color: #fff;">Type a valid name, warrior.</p>
+            <button type="button" id="submit" onmouseover="document.getElementById('blade').play()" disabled><strong>Next</strong></button>
+        </form>     
+    </div>
+<!-- First question -->
+    <div class="QOCard first">
+        <div class="InnerQO">
+            <div class="QO">
+                <h2>What lifestyle do you prefer ?</h2>
+                    <div class="options">
+                        <button id="1" class="option">To live among forests in harmony with nature.</button>
+                        <button id="2" class="option">To live near cities and buildings.</button>
+                    </div>
+            </div>
+        </div>
+    </div>
+<!-- Second question -->
+<div class="QOCard second">
+    <div class="InnerQO">
+        <div class="QO">
+            <h2>What do you think about magic ?</h2>
+                <div class="options">
+                    <button id="3" class="option">I have no interest in it, I would rather count on my natural skills.</button>
+                    <button id="4" class="option">I'm interested in it, but I'd carefully use it.</button>
+                </div>
+        </div>
+    </div>
+</div>
+<!-- third question -->
+<div class="QOCard third">
+    <div class="InnerQO">
+        <div class="QO">
+            <h2>How do you relate to others ?</h2>
+                <div class="options">
+                    <button id="5" class="option">I feel comfortable around people.</button>
+                    <button id="6" class="option">I often try to avoid people.</button>
+                </div>
+        </div>
+    </div>
+</div>
+<!-- forth question -->
+<div class="QOCard forth">
+    <div class="InnerQO">
+        <div class="QO">
+            <h2>How do you relate to violence ?</h2>
+                <div class="options">
+                    <button id="7" class="option">It is a tool that sometimes it's needed to defend myself and others.</button>
+                    <button id="8" class="option">I always look to avoid violence and find pacific solutions.</button>
+                </div>
+        </div>
+    </div>
+</div>
+<!-- fifth question -->
+<div class="QOCard fifth">
+    <div class="InnerQO">
+        <div class="QO">
+            <h2>What type of warrior do you consider yourself ?</h2>
+                <div class="options">
+                    <button id="9" class="option">The face-to-face one. Swords, axes and shields.</button>
+                    <button id="10" class="option">The stealthy type. Daggers, bow and arrows. </button>
+                </div>
+        </div>
+    </div>
+</div>
+
+<!-------------------Chosen race-------------------->
+<!-- your race was orcs -->
+<div class="outside-container one" >
+    <div class="inner-container">
+
+        <div class="img-container">
+            <img class="img-with-text" src="./imgs/female orc.jpeg" alt="">
+        </div>
+    
+        <div class="txt-container">
+            <p>" The Orcs were brought to earth through a dimensional gateway and waged war on humanity. Althoght they tolerate other races, they see humans as “ The pink skin pigs “. Their protective and extremely territorial attitude as well as their pride on their strenght and honor have help them survive in a world of madness full of hostilities. They are characteristic for their strong bond to the clan. You will never see an Orc alone. "</p>
+        </div>
+    
+        <div class="img-container">
+            <img class="img-with-text" src="./imgs/orc.jpg" alt="">
+        </div>
+
+    </div>
+</div>
+<!-- Your race was light elves -->
+<div class="outside-container two" >
+    <div class="inner-container">
+
+        <div class="img-container">
+            <img class="img-with-text" src="./imgs/light-elf woman.webp" alt="">
+        </div>
+    
+        <div class="txt-container">
+            <p>" Blinded by the sun and devoted to their highest divinity Braenwyn, goddess of light and heir to the world, the Elves of light are proud and brave warriors who shine in their shining armor. Althought their greatest disadvantages by nature are their arrogance and lack of vision, they have other enhanced senses that balance the scales in any face-to-face battle. They defend the light at all costs and see as a rival anyone who does not follow their devotion to Braenwyn. "</p>
+        </div>
+    
+        <div class="img-container">
+            <img class="img-with-text" src="./imgs/light-elf.jpg" alt="">
+        </div>
+
+    </div>
+</div>
+<!-- Your race was night elves -->
+<div class="outside-container three" >
+    <div class="inner-container">
+
+        <div class="img-container">
+            <img class="img-with-text" src="./imgs/night elf female.jpeg" alt="">
+        </div>
+    
+        <div class="txt-container">
+            <p>" Rebels by nature, erratic and impulsive. The night elves dwell in the shadows and worship Night as a deity itself. Their dream of utopia is in a world without sun or light. They are often conflictive even with their own species. Although large societies of night elves are known, it is normal to see them alone or in very small groups. You are never safe from a night elf, they are found in every dark corner or even in your own shadow. "</p>
+        </div>
+    
+        <div class="img-container">
+            <img class="img-with-text" src="./imgs/night elf.jpeg" alt="">
+        </div>
+
+    </div>
+</div>
+<!--  Your race was forest elves -->
+<div class="outside-container four" >
+    <div class="inner-container">
+
+        <div class="img-container">
+            <img class="img-with-text" src="./imgs/female forest elf.jpeg" alt="">
+        </div>
+    
+        <div class="txt-container">
+            <p>" Fed up by what seemed like an endless ethnic war between light and darkness, this society of elves composed of both sides, night and light, opted for freedom and established their own rules as a society in the deepest forests beyond the world that sorrounded them. After hundreds of years living in the forest, they became one with it. They turned into morphologies totally distinctive to their origins and a much deeper and spiritual connection with nature. "</p>
+        </div>
+    
+        <div class="img-container">
+            <img class="img-with-text" src="./imgs/forest elf.jpeg" alt="">
+        </div>
+
+    </div>
+</div>
+<!-- Your race was Draconians -->
+<div class="outside-container five" >
+    <div class="inner-container">
+
+        <div class="img-container">
+            <img class="img-with-text" src="./imgs/draconian female.jpeg" alt="">
+        </div>
+    
+        <div class="txt-container">
+            <p>" These reclusive beings, with scales as resilient as obsidian and eyes that shimmer bright in the darkness, reside in hidden places, far removed from any other species.Draconians, a secretive and enigmatic race, have chosen to live in seclusion. Their tough scales and mesmerizing eyes hint at their ancient origins and mystical magic abilities. Masters of arcane arts and keepers of forgotten knowledge, they observe the world from afar, hidden from the prying eyes of outsiders. "</p>
+        </div>
+    
+        <div class="img-container">
+            <img class="img-with-text" src="./imgs/draconian.jpeg" alt="">
+        </div>
+
+    </div>
+</div>
+    <script src="index.js"></script>
+</body>
+</html>
